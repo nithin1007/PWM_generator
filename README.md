@@ -15,7 +15,38 @@ The duty cycle can be used to estimate the apparent analog voltage that a pulse 
 
 **RTL of module**
 - Program links:
-  1. PWM generator - pwm_generator.v
-  2. test bench - tb_pwm_generator.v
+   PWM generator - pwm_generator.v
+**test bench** - tb_pwm_generator.v
+**iverilog and gtkwave codelines:**
+  - iverilog pwm_generator.v tb_pwm_generator.v
+  - ./a.out
+  - copy the generated dumpfile.v
+  - gtkwave dumpfile.vcd
+**RTL simulation**
+
+![image](https://github.com/nithin1007/PWM_generator/assets/139645209/59c96ca8-3765-4a78-86d3-bfa00dd10473)
+
+**Synthesis**
+
+Flow of synthesis 
+yosys
+read_liberty -lib<relative or abs path>/lib file
+read_verilog <verilog_file.v>
+synth -top <verilog_file>
+abc- liberty <relative or abs path>/lib file
+show
+write_verilog <file_name>.v or write_verilog -noattr <file_name>.v
+
+Standard cell invokation after mapping standard library file
+
+![image](https://github.com/nithin1007/PWM_generator/assets/139645209/c79bb2b8-3a56-422a-8675-63067a850216)
+
+
+
+
+
+
+
+
 
 
