@@ -16,6 +16,6 @@ The duty cycle can be used to estimate the apparent analog voltage that a pulse 
 **RTL of module**
 - Program links:
   1. PWM generator - pwm_generator.v
-  2. test bench - 
+  2. test bench - tb_pwm_generator.v
 
 
