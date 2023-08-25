@@ -14,6 +14,8 @@ The duty cycle can be used to estimate the apparent analog voltage that a pulse 
 ![Pulse-Width-Modulation-Duty-Cycle-Diagram-768x644](https://github.com/nithin1007/PWM_generator/assets/139645209/630f6d79-b249-4f57-812e-a7820be4e552)
 
 **RTL of module**
-
+- Program links:
+  1. PWM generator - pwm_generator.v
+  2. test bench - 
 
 
